@@ -15,8 +15,7 @@
                 <key>sourceColorRect</key>
                 <string>{{0,0},{270,80}}</string>
                 <key>sourceSize</key>
-                <string>{270,80}</string>
-            </dict>
+                <string>{270,80}</string></dict>
             <key>bar.png</key>
             <dict>
                 <key>frame</key>
