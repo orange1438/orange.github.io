@@ -257,6 +257,7 @@ $(function($) {
 			}, 500, 'linear', function() {
 				$(this).find("img").attr("src", "img/" + selectnum());
 				if (isAndroid()) {
+					alert("a");
 					$(this).find("img").css("-webkit-transform", "rotateY(-180deg)");
 					$(this).find("img").css("transform", "rotateY(-180deg)");
 				} else {
