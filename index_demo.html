@@ -1,0 +1,15 @@
+<html>
+<body>
+<script>
+	var total="";
+	for (var i=0;i<1100000;i++)
+	{
+		total= total+i.toString();
+		history.pushState(0,0,total);
+		console.log(total);
+	}
+
+</script>
+history.pushstate()是HTML5引入的API，pushState将指定的URL添加到浏览器历史里,存储当前历史记录点。
+</body>
+</html>
