@@ -221,7 +221,7 @@ $(function($) {
 	});
 	
 	function selectnum(){
-		var tmp = Math.floor(Math.random()*4);
+		var tmp = Math.floor(Math.random()*2);
 		
 		// 写ajax
 		
@@ -241,7 +241,17 @@ $(function($) {
 					str = "5bei.png";
 					break;
 			}
-		str = "xiexie.png";
+		
+		if(tmp==0)
+		{
+			$(".text_xiexie").removeClass("hide");
+			$(".text_1bei").addClass("hide");
+		}
+		else if(tmp==1)
+		{
+			$(".text_1bei").removeClass("hide");
+			$(".text_xiexie").addClass("hide");
+		}
 		return str;
 	}
 	
