@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type">
+		<meta name="author" content="su wei" />
+		<meta name="format-detection" content="email=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/li.min.css?v-1.0.1"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css?v-3.2.7"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css?v-2.0.2"/>
+		<link rel="stylesheet" type="text/css" href="css/pages/settleAccounts.css?v=2.0.1"/>
+		<title>支付</title>
+	</head>
+	<body>
+		<!--头部-->
+		<header class="sw-header">
+			<div class="sw-back"><img src="img/icon-15.png" width="100%" /></div>
+			<div class="sw-title"><h2>支付</h2></div>
+		</header>
+		<div class="sw-container">
+			<div class="sw-pay-user">
+				<h3>张全蛋</h3>
+				<p>
+					<b class="sw-pay-user-balance">余额：<span>1000.00</span>元</b>
+					<b class="sw-pay-user-currencyBeans">豆币：<span>2000</span>个</b>
+				</p>
+			</div>
+			<div class="sw-pay-list">
+				<div class="sw-pay-dining"><p>一心一客<small>（解放碑公交车站负一楼）</small></p></div>
+				<div class="sw-pay-food-list">
+					<div class="sw-pay-food">
+						<div class="sw-pay-food-name"><p class="sw-pay-food-primary">果汁</p><p class="sw-pay-food-secondary hide">享受餐厅折扣信息</p></div>
+						<div class="sw-pay-food-num"><p class="sw-pay-food-primary">&times;<span>1</span></p><p class="sw-pay-food-secondary"><i>送20豆币</i><span>8折</span></p></div>
+						<div class="sw-pay-food-price"><p class="sw-pay-food-secondary"><span>5.00</span>元</p><p class="sw-pay-food-primary"><span>4</span>元</p></div>
+					</div>
+					<div class="sw-pay-food">
+						<div class="sw-pay-food-name"><p class="sw-pay-food-primary">果汁</p><p class="sw-pay-food-secondary hide">享受餐厅折扣信息</p></div>
+						<div class="sw-pay-food-num"><p class="sw-pay-food-primary">&times;<span>1</span></p><p class="sw-pay-food-secondary"><i>送20豆币</i><span>8.9折</span></p></div>
+						<div class="sw-pay-food-price"><p class="sw-pay-food-secondary"><span>5.00</span>元</p><p class="sw-pay-food-primary"><span>4</span>元</p></div>
+					</div>
+				</div>
+				<div class="sw-pay-currencyBeans" target="false">
+					<div class="sw-pay-currencyBeans-hint">
+						<p>本次可用<span>0</span>豆币，抵扣<i>&yen;<span>0.00</span>元</i></p>
+						<div class="sw-checked sw-pay-currencyBeans-checked" id="payChecked" target="false"><p><span></span></p></div>
+					</div>
+				</div>
+				<div class="pay-pack">
+					<p>打包</p>
+					<p><span>2.00</span>元</p>
+				</div>
+				<div class="sw-pay-last-price">
+					<p>支付上次点餐的餐格超时占用费</p>
+					<p>2元</p>
+				</div>
+				<div class="sw-pay-total"><p>应支付：<i>&yen;<span>0</span></i></p></div>
+			</div>
+			<div class="sw-btn sw-btn-orangeRed btn-arc pay-btn" id="payBtn" target="true"><p>确认支付</p></div>
+		</div>
+		<!--弹窗验证手机号码-->
+		<div class="sw-confirm" id="setPhoneConfirm">
+			<div class="sw-confirm-bg"></div>
+			<div class="sw-pay-phone-inside">
+				<div class="sw-pay-phone">
+					<div class="sw-pay-phone-num"><input id="phoneNum" type="tel" placeholder="输入手机号验证解锁" /><div class="input-warn"><p></p></div></div>
+					<div class="sw-pay-phone-validate">
+						<input id="phoneValidate" type="tel" placeholder="输入验证码" disabled="disabled" />
+						<button id="getPhoneValidate" type="button" target="0">要验证码</button>
+						<div class="input-warn"><p></p></div>
+					</div>
+				</div>
+				<div class="sw-pay-phone-btn" target="false"><p>点此解锁</p></div>
+				<div class="sw-pay-phone-close"><p>&times;</p></div>
+			</div>
+		</div>
+		<script src="js/zepto.min.js?v-1.7.2" type="text/javascript" charset="utf-8"></script>
+		<script src="js/li.min.js?v=1.0.1" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js?v=2.0.1" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pages/jsForSettleAccounts.js?v=2.0.1" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

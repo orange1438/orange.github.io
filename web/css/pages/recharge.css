@@ -1,0 +1,96 @@
+html {
+	background: rgb(241, 242, 243);
+}
+
+.recharge-balance {
+	width: 100%;
+	height: 45px;
+	padding: 0 10%;
+	background: rgb(255, 255, 255);
+	box-shadow: 0px 2px 2px rgb(229, 230, 231);
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+}
+
+.recharge-balance p {
+	font-size: 1.1em;
+}
+
+.recharge-input {
+	width: 100%;
+	height: 45px;
+	margin-top: 10px;
+	background: rgb(255, 255, 255);
+}
+
+.recharge-input input {
+	width: 80%;
+	height: 35px;
+	margin-top: 5px;
+	margin-left: 10%;
+	padding: 0 10px;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid rgb(211, 211, 211);
+	box-sizing: border-box;
+}
+
+.recharge-choose {
+	width: 100%;
+	height: auto;
+	padding: 5px 0;
+	margin-bottom: 50px;
+	background: rgb(255, 255, 255);
+	box-shadow: 0px 2px 2px rgb(229, 230, 231);
+	overflow: hidden;
+}
+
+.recharge-choose h4 {
+	width: 100%;
+	padding-left: 10%;
+}
+
+.recharge-choose p {
+	width: 37%;
+	height: 40px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	float: left;
+}
+
+.recharge-choose p:nth-child(even) {
+	margin-left: 10%;
+}
+
+.recharge-choose p:nth-child(odd) {
+	margin-left: 6%;
+}
+
+.recharge-default {
+	color: rgb(211, 211, 211);
+	border: 1px solid rgb(211, 211, 211);
+}
+
+.recharge-active {
+	color: rgb(255, 190, 13);
+	border: 1px solid rgb(255, 190, 13);
+}
+
+#rechargeBtn {
+	width: 80%;
+	margin: 0 10%;
+	font-size: 1.2em;
+}

@@ -1,0 +1,163 @@
+html {
+	background: rgb(231, 232, 234);
+}
+
+.help-mess {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.help-mess:nth-of-type(1) {
+	margin-top: 10px;
+}
+
+.help-mess-title {
+	width: 100%;
+	height: 45px;
+	padding: 0 25px;
+	background: rgb(255, 255, 255);
+	border-bottom: 1px solid rgba(175, 175, 175, 0.5);
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: justify;
+	box-pack: justify;
+}
+
+.help-mess-title p {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.help-mess-title b {
+	width: 25px;
+	height: 25px;
+	display: block;
+}
+
+.help-mess-detailed {
+	width: 96%;
+	height: auto;
+	margin: 0 2%;
+	border-bottom: 1px solid rgba(175, 175, 175, 0.5);
+}
+
+.help-mess-detailed h3 {
+	position: relative;
+	padding: 5px 10px 0 10px;
+}
+
+.help-mess-detailed h3:before {
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	top: 14px;
+	left: 2px;
+	background: rgb(255, 111, 51);
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.help-mess-detailed p {
+	padding: 5px 10px;
+}
+
+.notShowAll {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.help-footer {
+	width: 100%;
+	height: auto;
+	margin-top: 200px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: rgb(56, 111, 172);
+}
+
+.help-footer p {
+	padding-bottom: 5px;
+}
+
+.help-footer a {
+	color: rgb(56, 111, 172);
+}
+
+.help-protocol {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+.help-protocol-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.help-protocol-main {
+	position: absolute;
+	width: 90%;
+	height: auto;
+	top: 50px;
+	left: 5%;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.help-protocol-title {
+	width: 100%;
+	height: 45px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-border-top-left-radius: 5px;
+	border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-right-radius: 5px;
+	background: rgb(69, 176, 53);
+}
+
+.help-protocol-title p {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+}
+
+.help-protocol-title b {
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	top: 0;
+	right: 0;
+	padding: 5px;
+}
+
+.help-protocol-mess {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 45px;
+	left: 0;
+	padding: 10px 10px 55px 10px;
+	background: rgb(255, 255, 255);
+}
+
+

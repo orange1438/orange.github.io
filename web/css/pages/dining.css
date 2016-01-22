@@ -1,0 +1,721 @@
+html {
+	background: rgb(241, 242, 243);
+}
+
+.dining-header {
+	height: 100px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+
+.dining-header-user {
+	position: relative;
+	width: 85%;
+	height: 58px;
+	margin: 0 8%;
+	padding: 0;
+	border-bottom: none;
+}
+
+.dining-header-user .dining-header-user-img {
+	width: 43px;
+	height: 43px;
+}
+
+.dining-header-user-mess {
+	width: 80%;
+	padding-left: 5px;
+	color: rgb(255, 255, 255);
+}
+
+.sw-navbar {
+	position: absolute;
+	width: 40px;
+	height: 30px;
+	right: 0px;
+	top: 14px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	box-pack: center;
+	background: rgba(255, 255, 255, 0.2);
+	-webkit-border-top-left-radius: 25px;
+	border-top-left-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	border-top-bottom-radius: 25px;
+}
+
+.sw-navbar b {
+	display: block;
+	width: 28px;
+	height: 28px;
+	margin: 1px;
+	background: url(../../img/icon-10.png) no-repeat;
+	background-size: cover;
+}
+
+
+/*地址*/
+
+.dining-address {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-webkit-box-orient: horizontal;
+	box-orient: horizontal;
+}
+
+.dining-address div {
+	position: relative;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	color: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.2);
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+}
+
+.dining-address-cityProper {
+	width: 35%;
+	height: 100%;
+	margin-right: 5px;
+	padding-left: 20px;
+	margin: 0;
+	font-size: 1.2em;
+}
+
+.dining-address-cityProper p {
+	width: 95%;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dining-address-street {
+	width: 50%;
+	height: 100%;
+	padding: 0 20px;
+	margin-left: 5px;
+	font-size: 1.2em;
+}
+
+.dining-address-street p {
+	width: 90%;
+}
+
+.dining-address-street marquee {
+	width: 90%;
+	display: block;
+}
+
+.dining-address-cityProper-before,
+.dining-address-street-before,
+.dining-address-street-after {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+}
+
+.dining-address-cityProper-before {
+	left: 0;
+	top: 0;
+	background: url(../../img/icon-01.png) no-repeat;
+	background-size: cover;
+}
+
+.dining-address-street-before {
+	left: 0;
+	top: 0;
+	background: url(../../img/icon-02.png) no-repeat;
+	background-size: cover;
+}
+
+.dining-address-street-after {
+	top: 0;
+	right: 0;
+	background: url(../../img/icon-03.png) no-repeat;
+	background-size: cover;
+}
+
+.dining-container {
+	margin-top: 100px;
+}
+
+.address-choose {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding: 20px 0 150px 0;
+	top: 150px;
+	left: 0;
+	background: rgb(241, 241, 241);
+	z-index: 2;
+	opacity: 0;
+}
+
+.address-choose-title {
+	width: 100%;
+	height: 30px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+}
+
+.address-choose-title-city,
+.address-choose-title-area {
+	position: relative;
+	height: 100%;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	color: rgb(255, 255, 255);
+	background: rgb(255, 190, 13);
+}
+
+.address-choose-title-city {
+	width: 50%;
+	margin-right: 5px;
+}
+
+.address-choose-title-area {
+	width: 30%;
+}
+
+.address-choose-title-remove {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	top: 0;
+	right: 0;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-weight: bold;
+}
+
+.address-choose-all {
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	box-pack: center;
+}
+
+.address-choose-all-cities {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide-allCities {
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: start;
+	box-pack: start;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+
+.allCities-community {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.allCities-initial {
+	position: absolute;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 20px;
+	font-weight: bold;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.allCities-city {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.chooseActive {
+	color: rgb(255, 190, 13);
+	background: rgb(255, 255, 255);
+}
+
+.address-choose-title-area span,
+.address-choose-title-city span {
+	width: 100%;
+	height: 100%;
+	font-size: 1.2em;
+	display: block;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.address-choose-all-area {
+	width: 30%;
+	height: 100%;
+}
+
+.swiper-slide-areas {
+	width: 100%;
+	height: auto;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+
+.swiper-slide-area {
+	width: 80%;
+	height: auto;
+	margin: 3px 0;
+	padding: 8px 5px;
+	font-size: 1.2em;
+	text-align: center;
+	color: rgba(115, 115, 115, 0.5);
+	border: 1px solid rgba(115, 115, 115, 0.4);
+	box-sizing: border-box;
+}
+
+
+/*收藏餐厅*/
+
+.dining-collects {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 0 6%;
+	background: rgb(255, 255, 255);
+}
+
+.dining-collects-title {
+	position: relative;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.dining-collects-title:before {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 1.3em;
+	left: 0;
+	background: rgb(216, 216, 216);
+	content: "";
+}
+
+.dining-collects-title p {
+	position: relative;
+	width: 80px;
+	height: auto;
+	padding: 8px 0;
+	margin: 0 auto;
+	font-size: 1.1em;
+	background: rgb(255, 255, 255);
+}
+
+.dining-collects-container {
+	height: 80px;
+	padding-bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+	width: 6px;
+	height: 6px;
+	background: rgb(69, 176, 53);
+	opacity: 0.3;
+}
+
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet {
+	margin: 0 3px;
+}
+
+.swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+.dining-collects-container .swiper-slide {
+	width: 100%;
+	height: 55px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: start;
+	box-pack: start;
+	-webkit-box-align: center;
+	box-align: center;
+	text-align: center;
+}
+
+.sw-collect-dining {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: 0 3px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	color: rgb(255, 255, 255);
+	background: rgb(69, 176, 53);
+}
+
+.sw-collect-dining-restaurantName,
+.sw-collect-dining-isOOS,
+.sw-collect-dining-isOOS:after,
+.sw-collect-dining-remove {
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-webkit-box-align: center;
+	box-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 1em;
+}
+
+.sw-collect-dining-restaurantName {
+	width: 100%;
+	height: 100%;
+	line-height: 110%;
+}
+
+.sw-collect-dining-isOOS,
+.sw-collect-dining-remove {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+.sw-collect-dining-isOOS {
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	z-index: 1;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.sw-collect-dining-isOOS img {
+	width: 40px;
+	height: auto;
+}
+
+.sw-collect-dining-remove {
+	z-index: 2;
+	background: none;
+}
+
+.sw-collect-dining-remove:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 15px;
+	height: 15px;
+	background: url(../../img/icon-26.png) no-repeat;
+	background-size: cover;
+}
+
+.dining-collects-remove {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	bottom: 0;
+	right: 0;
+	background: url(../../img/icon-05.png) no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+
+
+/*所有餐厅*/
+
+.dinings {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	background: rgb(255, 255, 255);
+}
+
+.dinings-title {
+	width: 100%;
+	height: auto;
+	padding: 5px 0;
+	padding-left: 4%;
+	font-weight: normal;
+	color: rgb(152, 152, 152);
+}
+
+.dinings-dining {
+	position: relative;
+	width: 100%;
+	height: 90px;
+	overflow: hidden;
+	border-top: 1px solid rgba(177, 177, 177, 0.5);
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+}
+
+.dinings-dining-left {
+	position: relative;
+	width: 40%;
+	height: 100%;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-webkit-box-align: center;
+	box-align: center;
+}
+
+.dining-brandName {
+	width: 80%;
+	height: 57px;
+	padding: 5px;
+	line-height: 120%;
+	text-align: center;
+	font-style: italic;
+	font-size: 1.4em;
+	font-weight: bold;
+	border: 2px solid rgb(69, 176, 53);
+	color: rgb(69, 176, 53);
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-webkit-box-align: center;
+	box-align: center;
+}
+
+.dining-brandName-icon {
+	position: absolute;
+	top: 14px;
+	left: 20%;
+	width: 60%;
+	height: auto;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: start;
+	box-pack: start;
+}
+
+.dining-brandName-icon span {
+	width: 15px;
+	height: auto;
+	margin-right: 5px;
+	display: block;
+}
+
+.dinings-dining-center {
+	width: 45%;
+	height: auto;
+}
+
+.dinings-dining-center .dining-restaurantName {
+	max-height: 30px;
+	font-size: 1em;
+	line-height: 110%;
+	overflow: hidden;
+}
+
+.dinings-dining-center .dining-tabs {
+	color: rgb(255, 255, 255);
+	margin-top: 8px;
+}
+
+.dinings-dining-center .dining-tabs span {
+	margin: 0 3px;
+	padding: 2px 3px;
+	font-size: 0.7em;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: rgb(255, 255, 255);
+}
+
+.dining-tabs-discount {
+	background: rgb(255, 99, 91);
+}
+
+.dining-tabs-new {
+	background: rgb(255, 186, 0);
+}
+
+.dining-tabs-preferential {
+	background: rgb(56, 111, 172);
+}
+
+.dinings-dining-right {
+	position: relative;
+	width: 15%;
+	height: 100%;
+}
+
+.dining-collect {
+	padding-top: 15px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+	color: rgb(205, 205, 205);
+}
+
+.dining-collect img {
+	width: 60%;
+	margin: 0 20%;
+}
+
+.dining-fly {
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	z-index: 8;
+}
+
+.dining-distance {
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
+	font-size: 0.8em;
+	text-align: right;
+	color: rgb(69, 176, 53);
+}
+
+.dining-OOS {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.1);
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: end;
+	box-pack: end;
+	z-index: 1;
+}
+
+.dining-OOS img {
+	width: 90px;
+	height: auto;
+	margin-right: 50px;
+}
+
+
+/*用户第一次使用的提醒*/
+
+.dining-pointOut {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+}
+
+.dining-pointOut-img {
+	position: relative;
+	width: 80%;
+	max-width: 350px;
+	margin: 100px auto;
+}
+
+.dining-pointOut-btn {
+	position: absolute;
+	width: 80px;
+	height: 30px;
+	bottom: 15px;
+	right: 10px;
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	z-index: 1;
+}
+
+.dining-pointOut-btn button {
+	width: 100%;
+	height: 100%;
+	font-size: 1.2em;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: rgb(153, 153, 153);
+	border: 2px solid rgb(101, 103, 102);
+	box-sizing: border-box;
+	box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5);
+	color: rgb(255, 255, 255);
+}
+
+.dining-pointOut-Countdown {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: end;
+	box-align: end;
+	-webkit-box-pack: center;
+	box-pack: center;
+}
+
+.dining-pointOut-Countdown p {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 15px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	font-size: 1.1em;
+	background: rgb(237, 143, 37);
+	border: 2px solid rgb(228, 88, 39);
+	box-sizing: border-box;
+	box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5);
+	color: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+}

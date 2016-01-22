@@ -1,0 +1,162 @@
+html {
+	background: rgb(241, 242, 243);
+}
+
+.order-text {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	z-index: 2;
+}
+
+.order-container {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.order {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	background: rgb(255, 255, 255);
+}
+
+.order-left {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.order-title {
+	width: 100%;
+	height: 33px;
+	padding: 0 15px;
+	border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.state-nonPayment {
+	color: rgb();
+}
+
+.state-forCatering {
+	color: rgb(69, 176, 53);
+}
+
+.state-mealToBeTaken {
+	color: rgb(255, 113, 53);
+}
+
+.state-fulfil {
+	color: rgb(145, 145, 145);
+}
+
+.state-alreadyRefunded {
+	color: rgb(255, 190, 13);
+}
+
+.state-loseEfficacy {
+	color: rgb(145, 145, 145);
+}
+
+.order-main {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 5px 15px 10px 15px;
+}
+
+.order-main-title {
+	width: 100%;
+	height: 18px;
+}
+
+.order-date,
+.order-restName,
+.order-meal {
+	position: relative;
+}
+
+.order-date:before,
+.order-restName:before,
+.order-meal:nth-of-type(1):before {
+	position: absolute;
+	content: "";
+	width: 3px;
+	height: 3px;
+	top: 8px;
+	left: -8px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: rgb(111, 111, 111);
+}
+
+.order-id {
+	color: rgb(111, 111, 111);
+}
+
+.order-main-mess {
+	width: 100%;
+	height: 25px;
+}
+
+.order-overtimeFee {
+	color: rgb(255, 0, 0);
+}
+
+.order-main-meals {
+	width: 100%;
+	height: auto;
+}
+
+.order-meal {
+	width: 100%;
+	height: 20px;
+	display: block;
+}
+
+.order-meal:nth-of-type(1):before {
+	top: 8px;
+}
+
+.order-meal span {
+	color: rgb(111, 111, 111);
+}
+
+.order-meal span:nth-of-type(2) {
+	padding-left: 10px;
+}
+
+.order-handle {
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+}
+
+.order-handle-takeMeal {
+	color: rgb(255, 111, 51);
+}
+
+.order-title,
+.order-main-title,
+.order-main-mess,
+.order-meal {
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: justify;
+	box-pack: justify;
+}

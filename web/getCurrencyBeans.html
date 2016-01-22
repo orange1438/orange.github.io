@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type">
+		<meta name="author" content="su wei" />
+		<meta name="format-detection" content="email=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/li.min.css?v-1.0.1" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css?v-2.0.1" />
+		<link rel="stylesheet" type="text/css" href="css/pages/getCurrencyBeans.css" />
+		<title>获取豆币</title>
+	</head>
+	<body>
+		<!--头部-->
+		<header class="sw-header">
+			<div class="sw-back"><img src="img/icon-15.png" width="100%" /></div>
+			<div class="sw-title"><h2>获取豆币</h2></div>
+		</header>
+		<div class="sw-container">
+			<div class="beans-title"><img src="img/icon-43.png" width="100%" /></div>
+			<div class="beans-main">
+				<div class="beans-inside">
+					<div class="beans-mess">
+						<p class="beans-mess-title"><img src="img/icon-44.png" width="100%" /></p>
+						<p class="beans-mess-text">爹，您可以通过点餐来获取豆币，不同的餐品有 不同的豆币数量赠送哦~</p>
+						<p class="beans-mess-btn" id="goDining"><img src="img/icon-45.png" width="100%" /></p>
+					</div>
+					<div class="beans-mess">
+						<p class="beans-mess-title"><img src="img/icon-47.png" width="100%" /></p>
+						<p class="beans-mess-text">爹，每天都可以在签到界面中签到，连续签到可 以获得丰厚的豆币回报哦~</p>
+						<p class="beans-mess-btn" id="goSignIn"><img src="img/icon-48.png" width="100%" /></p>
+					</div>
+					<div class="beans-mess">
+						<p class="beans-mess-title"><img src="img/icon-50.png" width="100%" /></p>
+						<p class="beans-mess-text">阿速有很多的优惠活动哦，活动中可能有大量的 豆币赠送~</p>
+						<p class="beans-mess-btn" id="goActivity"><img src="img/icon-51.png" width="100%" /></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/zepto.min.js?v-1.7.2" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//去点餐
+			$("#goDining").on({
+				touchstart: function() {
+					$(this).children("img").attr("src", "img/icon-46.png");
+				},
+				touchend: function() {
+					$(this).children("img").attr("src", "img/icon-45.png");
+				}
+			});
+			
+			//去签到
+			$("#goSignIn").on({
+				touchstart: function() {
+					$(this).children("img").attr("src", "img/icon-49.png");
+				},
+				touchend: function() {
+					$(this).children("img").attr("src", "img/icon-48.png");
+				}
+			});
+			
+			//去活动
+			$("#goActivity").on({
+				touchstart: function() {
+					$(this).children("img").attr("src", "img/icon-52.png");
+				},
+				touchend: function() {
+					$(this).children("img").attr("src", "img/icon-51.png");
+				}
+			});
+		</script>
+	</body>
+</html>

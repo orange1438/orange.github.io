@@ -1,0 +1,396 @@
+html {
+	background: rgb(241, 242, 243);
+}
+
+.sw-pay-user {
+	width: 100%;
+	height: 50px;
+	margin-top: 5px;
+	padding: 0 20px;
+	border-top: 1px dashed rgb(69, 176, 53);
+	border-bottom: 1px dashed rgb(69, 176, 53);
+	box-sizing: border-box;
+	color: rgb(170, 170, 170);
+	background: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+
+.sw-pay-user h3 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.sw-pay-user b {
+	font-weight: normal;
+	margin-right: 10px;
+	font-size: 0.8em;
+}
+
+.sw-pay-list {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+
+.sw-pay-dining {
+	width: 100%;
+	height: 40px;
+	color: rgb(69, 176, 53);
+	background: rgb(255, 255, 255);
+}
+
+.sw-pay-dining p {
+	width: 100%;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-style: italic;
+	padding: 0 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.sw-pay-food-list {
+	width: 100%;
+	height: auto;
+	background: rgb(255, 255, 255);
+	box-shadow: 0 2px 2px rgba(217, 217, 217, 0.5);
+}
+
+.sw-pay-food {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid rgba(177, 177, 177, 0.2);
+	overflow: hidden;
+}
+
+.sw-pay-food-primary {
+	font-size: 1.1em;
+}
+
+.sw-pay-food-secondary {
+	font-size: 0.8em;
+}
+
+.sw-pay-food-name {
+	width: 50%;
+	text-align: left;
+	float: left;
+}
+
+.sw-pay-food-name .sw-pay-food-primary {
+	padding: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.sw-pay-food-name .sw-pay-food-secondary {
+	padding: 0px 10px 10px 10px;
+}
+
+.sw-pay-food-num {
+	width: 30%;
+	text-align: right;
+	float: left;
+}
+
+.sw-pay-food-num .sw-pay-food-primary {
+	padding: 10px 2px;
+}
+
+.sw-pay-food-num .sw-pay-food-secondary {
+	padding: 0px 0px 10px 0px;
+}
+
+.sw-pay-food-num .sw-pay-food-secondary span {
+	padding: 0px 2px;
+	color: rgb(255, 255, 255);
+	background: rgb(255, 153, 0);
+}
+
+.sw-pay-food-num .sw-pay-food-secondary i {
+	padding: 0px 2px;
+	font-style: normal;
+	color: rgb(255, 153, 0);
+}
+
+.sw-pay-food-price {
+	width: 20%;
+	text-align: right;
+	float: right;
+}
+
+.sw-pay-food-price .sw-pay-food-secondary {
+	text-decoration: line-through;
+	padding: 10px 10px 0px 0px;
+	color: rgb(193, 193, 193);
+}
+
+.sw-pay-food-price .sw-pay-food-primary {
+	padding: 10px 10px 10px 0px;
+}
+
+.sw-pay-currencyBeans,
+.pay-pack,
+.sw-pay-last-price,
+.sw-pay-total {
+	position: relative;
+	width: 100%;
+	height: 45px;
+	background: rgb(255, 255, 255);
+	box-shadow: 0 2px 2px rgba(217, 217, 217, 0.5);
+}
+
+.sw-pay-currencyBeans {
+	margin-top: 5px;
+}
+
+.sw-pay-currencyBeans-hint {
+	width: 75%;
+	padding-left: 10px;
+}
+
+.sw-pay-currencyBeans-hint i {
+	font-style: normal;
+	color: rgb(255, 153, 0);
+}
+
+.sw-pay-currencyBeans-checked {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.sw-pay-currencyBeans-checked p {
+	margin: 10px 10px 9px;
+}
+
+.pay-pack {
+	padding: 0 10px;
+	margin-top: 5px;
+}
+
+.sw-pay-last-price {
+	padding: 0 10px;
+	margin-top: 5px;
+}
+
+.sw-pay-total {
+	margin-top: 15px;
+	padding: 0 10px;
+}
+
+.sw-pay-total p {
+	color: rgb(255, 111, 51);
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.sw-pay-total i {
+	font-style: normal;
+}
+
+.pay-btn {
+	width: 80%;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 20px 10%;
+}
+
+.sw-pay-dining,
+.sw-pay-currencyBeans,
+.pay-pack,
+.sw-pay-last-price,
+.sw-pay-total {
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+}
+
+.pay-pack,
+.sw-pay-last-price {
+	-webkit-box-pack: justify;
+	box-pack: justify;
+}
+
+.sw-pay-total {
+	-webkit-box-pack: end;
+	box-pack: end;
+}
+
+
+/*支付验证电话号码*/
+
+.sw-confirm {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+	z-index: 9999;
+	display: none;
+}
+
+.sw-confirm-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: -1;
+}
+
+.sw-pay-phone-inside {
+	position: relative;
+	width: 280px;
+	height: auto;
+	margin: 150px auto;
+	-webkit-animation: swFadeIn 0.3s ease-in;
+	animation: swFadeIn 0.3s ease-in;
+}
+
+.sw-pay-phone {
+	width: 100%;
+	height: auto;
+	padding: 20px 0px;
+	background: rgb(255, 255, 255);
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.sw-pay-phone-num {
+	position: relative;
+	width: 80%;
+	height: auto;
+	margin: 10px 10%;
+}
+
+.sw-pay-phone-num input {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid rgb(214, 214, 214);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.sw-pay-phone-validate {
+	position: relative;
+	width: 80%;
+	height: 40px;
+	margin: 10px 10%;
+	display: -webkit-box;
+	display: box;
+}
+
+.sw-pay-phone-validate input {
+	width: 60%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid rgb(214, 214, 214);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.sw-pay-phone-validate button {
+	width: 35%;
+	height: 100%;
+	margin-left: 5%;
+	display: block;
+	box-sizing: border-box;
+	border: none;
+	color: rgb(255, 255, 255);
+	background: rgb(255, 153, 0);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.input-warn:before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: -6px;
+	left: 30px;
+	background: rgb(214, 214, 214);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.input-warn {
+	position: absolute;
+	width: 90%;
+	height: auto;
+	top: 46px;
+	left: 0px;
+	padding: 12px 10px;
+	border: 1px solid rgb(214, 214, 214);
+	background: rgb(255, 255, 255);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 1;
+	display: none;
+}
+
+.input-warn:after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: -5px;
+	left: 30px;
+	background: rgb(255, 255, 255);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.sw-pay-phone-btn {
+	width: 280px;
+	height: auto;
+	margin: 0px auto;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	overflow: hidden;
+}
+
+.sw-pay-phone-btn p {
+	color: rgb(255, 255, 255);
+	padding: 10px 0px;
+	background: rgb(255, 153, 0);
+}
+
+.sw-pay-phone-close {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0px;
+	right: 0px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: rgb(255, 255, 255);
+	overflow: hidden;
+	z-index: 1;
+}
+
+.sw-pay-phone-close p {
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 25px;
+}
+

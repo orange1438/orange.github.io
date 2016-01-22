@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type">
+		<meta name="author" content="su wei" />
+		<meta name="format-detection" content="email=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/li.min.css?v-1.0.1" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css?v-2.0.1" />
+		<link rel="stylesheet" type="text/css" href="css/pages/recharge.css?v=2.0.1" />
+		<title>充值</title>
+	</head>
+	<body>
+		<!--头部-->
+		<header class="sw-header">
+			<div class="sw-back"><img src="img/icon-15.png" width="100%" /></div>
+			<div class="sw-title"><h2>充值</h2></div>
+		</header>
+		<div class="sw-container">
+			<div class="recharge-balance"><p>余额：&yen;1000</p></div>
+			<div class="recharge-input"><input type="tel" id="rechargeInput" placeholder="手动输入充值金额" /></div>
+			<div class="recharge-choose">
+				<h4>充值金额选择</h4>
+				<p class="recharge-default" data-money="50">50元</p>
+				<p class="recharge-default" data-money="100">100元</p>
+				<p class="recharge-default" data-money="200">200元</p>
+				<p class="recharge-default" data-money="300">300元</p>
+				<p class="recharge-default" data-money="500">500元</p>
+				<p class="recharge-default" data-money="1000">1000元</p>
+			</div>
+			<div class="sw-btn sw-btn-orangeRed btn-arc" id="rechargeBtn"><p>充值</p></div>
+		</div>
+		<script src="js/zepto.min.js?v-1.7.2" type="text/javascript" charset="utf-8"></script>
+		<script src="js/li.min.js?v=1.0.1" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js?v=2.0.1" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pages/jsForRecharge.js?v=2.0.1" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//用户选择金额
+			$(".recharge-choose p").tap(function() {
+				//清空输入的金额
+				$("#rechargeInput").val("");
+				//改变选中的css
+				$(".recharge-choose p").removeClass("recharge-active");
+				$(this).addClass("recharge-active");
+			});
+			
+			//用户自定义输入金额
+			$("#rechargeInput").tap(function() {
+				//改变选中的css
+				$(".recharge-choose p").removeClass("recharge-active");
+			});
+			
+			//充值
+			$("#rechargeBtn").tap(function() {
+				//用户选择金额
+				var rechargeMoney = $(".recharge-active").attr("data-money");
+				if (rechargeMoney == undefined) {
+					//用户没选择自定义输入金额
+					rechargeMoney = $("#rechargeInput").val();
+					if (rechargeMoney == "") {
+						upPrompt("请输入金额");
+						return;
+					} else {
+						var arr = rechargeMoney.split("");
+						for (var i = 0; i < arr.length; i++) {
+							var result = checkMoney(arr[i]);
+							if (!result) {
+								upPrompt("请输入正确的金额");
+								return;
+							}
+						}
+					}
+				}
+				rechargeMoney = parseInt(rechargeMoney);
+				//充值
+				
+			});
+		</script>
+	</body>
+</html>

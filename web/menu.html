@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type">
+		<meta name="author" content="su wei" />
+		<meta name="format-detection" content="email=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/li.min.css?v-1.0.1"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css?v-3.2.7"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css?v-2.0.1"/>
+		<link rel="stylesheet" type="text/css" href="css/pages/menu.css?v=2.0.1"/>
+		<title>选择菜品</title>
+	</head>
+	<body>
+		<!--头部-->
+		<header class="sw-header menu-header">
+			<div class="sw-back"><img src="img/icon-15.png" width="100%" /></div>
+			<div class="menu-header-brandName"><h2>乡村基<small>（<span>解放碑店</span>）</small></h2></div>
+			<div class="menu-header-collect"><img src="img/icon-06.png" width="100%" /></div>
+		</header>
+		<div class="sw-container">
+			<div class="menu-address"><p>解放碑王府井百货2楼1203</p></div>
+			<div class="menu-classify">
+				<div class="swiper-container" id="classify" isslidermove="0">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide swiper-slide-classify"></div>
+					</div>
+					<div class="swiper-scrollbar swiper-scrollbar-classify"></div>
+				</div>
+			</div>
+			<div class="menu-dishes" nowTime="90000">
+				<div class="swiper-container" id="dishes" isSliderMove="0">
+					<div class="swiper-wrapper"><div class="swiper-slide"></div></div>
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</div>
+		</div>
+		<footer class="menu-footer">
+			<div class="menu-footer-bg fadeOut hide"></div>
+			<div class="menu-footer-main">
+				<div class="menu-footer-trolley" target="false"><img src="img/icon-16.png" width="100%" /><b class="menu-footer-trolley-icon">0</b></div>
+				<div class="menu-footer-foods hide">
+					<div class="menu-footer-title">
+						<p class="menu-footer-title-trolley">购物车</p>
+						<p class="menu-footer-title-clear"><img src="img/icon-17.png" width="100%" /><span>清空全部</span></p>
+					</div>
+					<div class="menu-footer-foods-container">
+						<div class="swiper-container" id="footerFoods" isSliderMove="0">
+							<div class="swiper-wrapper"><div class="swiper-slide"></div></div>
+							<div class="swiper-scrollbar swiper-scrollbar-footerFoods"></div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-footer-pack hide" target="false" packPrice="200">
+					<b class="menu-footer-pack-icon"><img src="img/icon-36.png" width="100%" /></b>
+					<span>打包<small>（打包费<i>2</i>元）</small></span>
+				</div>
+				<div class="menu-footer-pay">
+					<h3 class="hide">需支付：&yen;<span>0</span>元</h3>
+					<h4>您还没有点餐哦~</h4>
+					<p class="sw-btn sw-btn-hoary" id="payBtn" target="0">去付款</p>
+				</div>
+			</div>
+		</footer>
+		<script src="js/zepto.min.js?v-1.7.2" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js?v-3.2.7" type="text/javascript" charset="utf-8"></script>
+		<script src="js/li.min.js?v=1.0.1" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js?v=2.0.1" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pages/menu.js?v=2.0.1" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pages/jsForMenu.js?v=2.0.1" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

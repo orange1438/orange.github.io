@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type">
+		<meta name="author" content="su wei" />
+		<meta name="format-detection" content="email=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/li.min.css?v-1.0.1"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css?v-3.2.7"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css?v-2.0.1"/>
+		<link rel="stylesheet" type="text/css" href="css/pages/dining.css?v-2.0.1"/>
+		<title>选择餐厅</title>
+	</head>
+	<body>
+		<!--头部-->
+		<header class="sw-header dining-header">
+			<div class="right-navbar-user dining-header-user">
+				<div class="dining-header-user-img"><img src="img/user-photo.png" width="100%" /></div>
+				<div class="dining-header-user-mess">
+					<h3 class="dining-header-user-name">张三</h3>
+					<p class="dining-header-user-balance">余额：<span>2000</span>元&nbsp;&nbsp;豆币：<span>1000</span>个</p>
+				</div>
+			</div>
+			<div class="dining-address">
+				<div class="dining-address-cityProper" target="false" data-city="重庆" data-area="渝中区"><b class="dining-address-cityProper-before"></b><p>重庆市重庆市</p></div>
+				<div class="dining-address-street"><b class="dining-address-street-before"></b><marquee direction="left">民族路15号民族路15号民族路15号 </marquee><b class="dining-address-street-after"></b></div>
+			</div>
+			<div class="sw-navbar" isOpen="false"><b></b></div>
+		</header>
+		<!--侧边栏-->
+		<nav class="sw-nav">
+			<div class="sw-nav-bg"></div>
+			<div class="right-navbar">
+				<div class="right-navbar-user">
+					<div class="dining-header-user-img">
+						<img src="img/user-photo.png" width="100%" />
+					</div>
+					<div class="dining-header-user-mess">
+						<h3 class="dining-header-user-name">张三</h3>
+						<p class="dining-header-user-balance">余额：<span>2000</span>元<br />豆币：<span>1000</span>个</p>
+					</div>
+				</div>
+				<div class="right-navbar-back"><img src="img/icon-15.png" width="100%" /></div>
+				<div class="right-navbar-navs">
+					<div class="right-navbar-nav feelMove"><div><img src="img/icon-08.png" width="100%" /><p>订单<small>说明说明说明说明说明说明说明</small></p><b class="right-navbar-nav-icon hide"></b></div></div>
+					<div class="right-navbar-nav feelMove"><div><img src="img/icon-09.png" width="100%" /><p>充值<small>说明</small></p><b class="right-navbar-nav-icon"></b></div></div>
+					<div class="right-navbar-nav feelMove"><div><img src="img/icon-10.png" width="100%" /><p>账号<small>说明</small></p><b class="right-navbar-nav-icon"></b></div></div>
+					<div class="right-navbar-nav feelMove"><div><img src="img/icon-11.png" width="100%" /><p>活动<small>说明</small></p><b class="right-navbar-nav-icon"></b></div></div>
+					<div class="right-navbar-nav feelMove"><div><img src="img/icon-12.png" width="100%" /><p>签到<small>说明</small></p><b class="right-navbar-nav-icon hide"></b></div></div>
+					<div class="right-navbar-nav feelMove"><div><img src="img/icon-13.png" width="100%" /><p>帮助<small>说明</small></p><b class="right-navbar-nav-icon"></b></div></div>
+					<div class="right-navbar-nav feelMove"><div><img src="img/icon-14.png" width="100%" /><p>吐槽<small>说明</small></p><b class="right-navbar-nav-icon"></b></div></div>
+				</div>
+				<div class="right-navbar-advertisement"><img src="img/img-mall-01.png" width="100%" /></div>
+			</div>
+		</nav>
+		<!--地址候选-->
+		<div class="address-choose hide">
+			<div class="address-choose-title">
+				<p class="address-choose-title-city"><span>重庆市</span><b class="address-choose-title-remove hide"><img src="img/icon-04.png" width="100%" /></b></p>
+				<p class="address-choose-title-area hide"><span>渝中区</span><b class="address-choose-title-remove hide"><img src="img/icon-04.png" width="100%" /></b></p>
+			</div>
+			<div class="address-choose-all">
+				<div class="address-choose-all-cities">
+					<div class="swiper-container" id="allCities" isSliderMove="0">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide swiper-slide-allCities">
+								<div class="allCities-community">
+									<p class="allCities-initial">B</p>
+									<p class="allCities-city" target="北京">北京</p>
+								</div>
+								<div class="allCities-community">
+									<p class="allCities-initial">C</p>
+									<p class="allCities-city" target="重庆">重庆</p>
+									<p class="allCities-city" target="成都">成都</p>
+								</div>
+								<div class="allCities-community">
+									<p class="allCities-initial">G</p>
+									<p class="allCities-city" target="广州">广州</p>
+								</div>
+								<div class="allCities-community">
+									<p class="allCities-initial">S</p>
+									<p class="allCities-city" target="上海">上海</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-scrollbar swiper-scrollbar-allCities"></div>
+					</div>
+				</div>
+				<div class="address-choose-all-area hide">
+					<div class="swiper-container" id="areas" isslidermove="0">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide swiper-slide-areas">
+								<p class="swiper-slide-area">渝中区</p>
+								<p class="swiper-slide-area">巴南区</p>
+								<p class="swiper-slide-area">南岸区</p>
+								<p class="swiper-slide-area">渝北区</p>
+								<p class="swiper-slide-area">不知道什么区</p>
+								<p class="swiper-slide-area">渝中区</p>
+								<p class="swiper-slide-area">巴南区</p>
+								<p class="swiper-slide-area">南岸区</p>
+								<p class="swiper-slide-area">渝北区</p>
+								<p class="swiper-slide-area">不知道什么区不知道什么区</p>
+								<p class="swiper-slide-area">渝中区</p>
+								<p class="swiper-slide-area">巴南区</p>
+								<p class="swiper-slide-area">南岸区</p>
+								<p class="swiper-slide-area">渝北区</p>
+								<p class="swiper-slide-area">不知道什么区</p>
+							</div>
+						</div>
+						<div class="swiper-scrollbar swiper-scrollbar-areas"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sw-container dining-container">
+			<!--收藏-->
+			<div class="dining-collects">
+				<div class="dining-collects-title"><p>我的收藏</p></div>
+				<div class="swiper-container dining-collects-container" id="diningCollects"  isSliderMove="0">
+					<div class="swiper-wrapper"></div>
+			        <div class="swiper-pagination dining-collects-pagination"></div>
+				</div>
+				<div class="dining-collects-remove" target="false"><b></b></div>
+			</div>
+			<!--餐厅-->
+			<div class="dinings">
+				<h4 class="dinings-title">附近餐厅</h4>
+				<div class="dinings-dining" data-restaurantId="0001" data-restaurantName="" data-brandName=""data-isCollect="true" data-userMap="" data-isOOS="" data-distance="">
+					<div class="dinings-dining-left">
+						<p class="dining-brandName">老一辈火锅米线</p>
+						<p class="dining-brandName-icon hide">
+							<span class="dining-brandName-icon-hot"><img src="img/icon-27.png" width="100%" /></span>
+							<span class="dining-brandName-icon-derate"><img src="img/icon-28.png" width="100%" /></span>
+						</p>
+					</div>
+					<div class="dinings-dining-center">
+						<p class="dining-restaurantName">解放碑王府井店解放碑王府井店解放碑王府井店解放碑王府井店</p>
+						<p class="dining-tabs"><span class="dining-tabs-discount">折</span><span class="dining-tabs-new">新</span><span class="dining-tabs-preferential">惠</span></p>
+					</div>
+					<div class="dinings-dining-right">
+						<div class="dining-collect">
+							<img src="img/icon-06.png" width="100%" />
+							<p class="dining-collect-num hide">500</p>
+						</div>
+					</div>
+					<div class="dining-distance"><p><span>2066600</span>m</p></div>
+					<div class="dining-OOS hide"><img src="img/icon-33.png" width="100%" /></div>
+				</div>
+				<div class="dinings-dining" data-restaurantId="0002" data-restaurantName="" data-brandName=""data-isCollect="true" data-userMap="" data-isOOS="" data-distance="">
+					<div class="dinings-dining-left"><p class="dining-brandName">乡村基2</p></div>
+					<div class="dinings-dining-center">
+						<p class="dining-restaurantName">解放碑王府井店</p>
+						<p class="dining-tabs"><span class="dining-tabs-discount">折</span><span class="dining-tabs-new">新</span><span class="dining-tabs-preferential">惠</span></p>
+					</div>
+					<div class="dinings-dining-right">
+						<div class="dining-collect">
+							<img src="img/icon-06.png" width="100%" />
+							<p class="dining-collect-num hide">500</p>
+						</div>
+					</div>
+					<div class="dining-distance"><p><span>2066600</span>m</p></div>
+					<div class="dining-OOS hide"><img src="img/icon-33.png" width="100%" /></div>
+				</div>
+				<div class="dinings-dining" data-restaurantId="0003" data-restaurantName="" data-brandName=""data-isCollect="true" data-userMap="" data-isOOS="" data-distance="">
+					<div class="dinings-dining-left"><p class="dining-brandName">乡村基3</p></div>
+					<div class="dinings-dining-center">
+						<p class="dining-restaurantName">解放碑王府井店</p>
+						<p class="dining-tabs"><span class="dining-tabs-discount">折</span><span class="dining-tabs-new">新</span><span class="dining-tabs-preferential">惠</span></p>
+					</div>
+					<div class="dinings-dining-right">
+						<div class="dining-collect">
+							<img src="img/icon-06.png" width="100%" />
+							<p class="dining-collect-num hide">500</p>
+						</div>
+					</div>
+					<div class="dining-distance"><p><span>2066600</span>m</p></div>
+					<div class="dining-OOS"><img src="img/icon-33.png" width="100%" /></div>
+				</div>
+				<div class="dinings-dining" data-restaurantId="0004" data-restaurantName="" data-brandName=""data-isCollect="true" data-userMap="" data-isOOS="" data-distance="">
+					<div class="dinings-dining-left"><p class="dining-brandName">乡村基4</p></div>
+					<div class="dinings-dining-center">
+						<p class="dining-restaurantName">解放碑王府井店</p>
+						<p class="dining-tabs"><span class="dining-tabs-discount">折</span><span class="dining-tabs-new">新</span><span class="dining-tabs-preferential">惠</span></p>
+					</div>
+					<div class="dinings-dining-right">
+						<div class="dining-collect">
+							<img src="img/icon-06.png" width="100%" />
+							<p class="dining-collect-num hide">500</p>
+						</div>
+					</div>
+					<div class="dining-distance"><p><span>2066600</span>m</p></div>
+					<div class="dining-OOS"><img src="img/icon-33.png" width="100%" /></div>
+				</div>
+				<div class="dinings-dining" data-restaurantId="0005" data-restaurantName="" data-brandName=""data-isCollect="true" data-userMap="" data-isOOS="" data-distance="">
+					<div class="dinings-dining-left"><p class="dining-brandName">乡村基5</p></div>
+					<div class="dinings-dining-center">
+						<p class="dining-restaurantName">解放碑王府井店</p>
+						<p class="dining-tabs"><span class="dining-tabs-discount">折</span><span class="dining-tabs-new">新</span><span class="dining-tabs-preferential">惠</span></p>
+					</div>
+					<div class="dinings-dining-right">
+						<div class="dining-collect">
+							<img src="img/icon-06.png" width="100%" />
+							<p class="dining-collect-num hide">500</p>
+						</div>
+					</div>
+					<div class="dining-distance"><p><span>2066600</span>m</p></div>
+					<div class="dining-OOS"><img src="img/icon-33.png" width="100%" /></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/zepto.min.js?v-1.7.2" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js?v-3.2.7" type="text/javascript" charset="utf-8"></script>
+		<script src="js/li.min.js?v=1.0.1" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js?v=2.0.1" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pages/dining.js?v=2.0.1" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pages/jsForDining.js?v=2.0.1" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

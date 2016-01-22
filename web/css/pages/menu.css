@@ -1,0 +1,640 @@
+html {
+	background: rgb(241, 242, 243);
+}
+
+.menu-header {
+	overflow: hidden;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: justify;
+	box-pack: justify;
+}
+
+.menu-header-brandName {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-indent: 40px;
+	text-align: left;
+	font-style: italic;
+	color: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	z-index: -1;
+}
+
+.menu-header-brandName h2 {
+	font-size: 1.2em;
+}
+
+.menu-header-collect {
+	width: 30px;
+	height: 30px;
+	margin-right: 15px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+}
+
+.menu-address {
+	position: fixed;
+	width: 100%;
+	height: 30px;
+	top: 50px;
+	left: 0;
+	text-align: center;
+	background: rgb(252, 200, 59);
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	z-index: 9;
+}
+
+.menu-address p {
+	width: 95%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.menu-classify {
+	position: fixed;
+	width: 24%;
+	height: 100%;
+	top: 82px;
+	left: 0;
+	padding-bottom: 172px;
+	background: rgb(241, 242, 243);
+	z-index: 8;
+}
+
+.menu-classify-mess {
+	width: 100%;
+	height: 50px;
+	padding: 0 5px;
+	font-size: 1.1em;
+	display: -webkit-box;
+	display: box;
+	text-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+	box-orient: horizontal;
+	color: rgb(72, 72, 72);
+	overflow: hidden;
+}
+
+.classify-active {
+	color: rgb(69, 176, 53);
+	background: rgb(255, 255, 255);
+	border-left: 2px solid rgb(69, 176, 53);
+	box-sizing: border-box;
+}
+
+.menu-classify .swiper-slide {
+	width: 100%;
+	height: auto;
+	overflow-y: auto;
+}
+
+.menu-dishes {
+	position: relative;
+	width: 75%;
+	height: 100%;
+	/*top: 82px;*/
+	margin-top: 32px;
+	margin-left: 24.5%;
+	/*right: 0.5%;*/
+	padding-bottom: 50px;
+	z-index: 8;
+}
+
+.menu-dishes-classify {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.menu-dishes-classify-title {
+	position: relative;
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.menu-dishes-classify-title:before {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0.75em;
+	left: 0;
+	background: rgba(216, 216, 216, 0.5);
+	content: "";
+}
+
+.menu-dishes-classify-title p {
+	position: relative;
+	width: 80px;
+	height: auto;
+	padding: 3px 0;
+	margin: 0 auto;
+	font-size: 0.8em;
+	color: rgb(111, 111, 111);
+	background: rgb(241, 242, 243);
+}
+
+.menu-food {
+	position: relative;
+	width: 100%;
+	height: 80px;
+	padding: 0 8px;
+	margin-bottom: 2px;
+	background: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: start;
+	box-align: start;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+
+.menu-food-name {
+	width: 80%;
+	height: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.menu-food-name img {
+	width: 30px;
+	height: 30px;
+}
+
+.menu-food-name span {
+	font-size: 1.1em;
+	vertical-align: middle;
+}
+
+.menu-food-preferential {
+	font-size: 0.65em;
+	padding-left: 5px;
+	color: rgb(159, 159, 159);
+}
+
+.menu-food-preferential i {
+	font-style: normal;
+	padding: 1px;
+	border: 1px solid rgb(252, 200, 59);
+	box-sizing: border-box;
+}
+
+.menu-food-preferential-discount {
+	color: rgb(252, 200, 59);
+}
+
+.menu-food-preferential-beans {
+	color: rgb(255, 255, 255);
+	background: rgb(252, 200, 59);
+}
+
+.menu-food-price {
+	font-size: 1.2em;
+	padding-left: 5px;
+	color: rgb(255, 111, 51);
+}
+
+.menu-food-price small {
+	font-size: 0.6em;
+	color: rgb(159, 159, 159);
+}
+
+.menu-food-labs {
+	position: absolute;
+	width: 20%;
+	max-height: 40px;
+	top: 5px;
+	right: 0;
+	text-align: center;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: justify;
+	box-pack: justify;
+}
+
+.menu-food-labs span {
+	font-size: 0.8em;
+	padding: 2px 3px;
+	margin: 1px;
+	color: rgb(255, 255, 255);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.menu-food-discount {
+	background: rgb(255, 99, 91);
+}
+
+.menu-food-hot {
+	background: rgb(255, 99, 91);
+}
+
+.menu-food-new {
+	background: rgb(255, 186, 0);
+}
+
+.menu-food-btn {
+	position: absolute;
+	width: 90px;
+	height: 30px;
+	bottom: 5px;
+	right: 10px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	z-index: 2;
+}
+
+.menu-food-btn b {
+	width: 30px;
+	height: 30px;
+	font-size: 1.4em;
+	text-align: center;
+	font-weight: bold;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px solid rgb(189, 189, 189);
+	box-sizing: border-box;
+}
+
+.menu-food-btn-subtract {
+	background: url(../../img/icon-31.png) no-repeat;
+	background-size: cover;
+}
+
+.menu-food-btn-add {
+	background: url(../../img/icon-29.png) no-repeat;
+	background-size: cover;
+}
+
+.menu-food-btn-num {
+	width: 30px;
+	height: 30px;
+	display: block;
+	text-align: center;
+}
+
+.menu-food-btn b,
+.menu-food-btn span {
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+}
+
+.menu-food-add {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 30px;
+	z-index: 1;
+}
+
+.menu-food-notTime,
+.menu-food-OOS {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.1);
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+}
+
+.menu-food-notTime {
+	z-index: 3;
+}
+
+.menu-food-notTime img {
+	width: 150px;
+	height: auto;
+}
+
+.menu-food-OOS {
+	z-index: 4;
+}
+
+.menu-food-OOS img {
+	width: 70px;
+	height: auto;
+}
+
+.menu-footer {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.menu-footer-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.menu-footer-main {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom: 0;
+	left: 0;
+	background: rgb(255, 255, 255);
+	border-top: 1px solid rgb(237, 237, 237);
+}
+
+.menu-footer-trolley {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: -25px;
+	left: 10px;
+	color: rgb(255, 255, 255);
+	background: rgb(215, 215, 215);
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	z-index: 4;
+}
+
+.menu-footer-trolley img {
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+}
+
+.menu-footer-trolley-icon {
+	display: block;
+	width: 15px;
+	height: 15px;
+	top: 0;
+	right: 0;
+	font-size: 0.8em;
+	text-align: center;
+	position: absolute;
+	color: rgb(255, 255, 255);
+	background: rgb(215, 215, 215);
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.menu-footer-foods {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: rgb(255, 255, 255);
+	z-index: 1;
+}
+
+.menu-footer-title {
+	position: relative;
+	width: 100%;
+	height: 35px;
+	color: rgb(175, 175, 175);
+	background: rgb(237, 237, 237);
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+}
+
+.menu-footer-title:after {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: 27px;
+	top: -5px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background: rgb(237, 237, 237);
+}
+
+.menu-footer-title-trolley {
+	width: 50%;
+	height: auto;
+	padding-left: 20px;
+	font-size: 0.9em;
+}
+
+.menu-footer-title-clear {
+	width: 50%;
+	height: auto;
+	text-align: right;
+	padding-right: 20px;
+	font-size: 0.9em;
+}
+
+.menu-footer-title-clear img {
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+}
+
+.menu-footer-title-clear span {
+	vertical-align: middle;
+}
+
+.menu-footer-foods-container {
+	width: 100%;
+	height: auto;
+	max-height: 250px;
+	overflow-y: auto;
+	border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+.menu-footer-food {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	border-bottom: 1px solid rgb(237, 237, 237);
+	box-sizing: border-box;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.menu-footer-food:last-child {
+	border-bottom: none;
+}
+
+.menu-footer-food:before {
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	left: 4px;
+	top: 18px;
+	background: rgb(69, 176, 53);
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.menu-footer-food-name {
+	width: 50%;
+	height: auto;
+	padding-left: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.menu-footer-food-price {
+	width: 20%;
+	height: auto;
+	text-align: center;
+	font-size: 1.1em;
+	color: rgb(255, 111, 51);
+}
+
+.menu-footer-food-num {
+	position: absolute;
+	width: 90px;
+	height: 30px;
+	right: 5px;
+	top: 5px;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+}
+
+.menu-footer-food-num b {
+	width: 30px;
+	height: 30px;
+	display: block;
+	font-size: 1.4em;
+	text-align: center;
+	font-weight: bold;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px solid rgb(199, 199, 199);
+	box-sizing: border-box;
+}
+
+.menu-footer-food-num span {
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+}
+
+.menu-footer-pack {
+	position: relative;
+	width: auto;
+	height: 0;
+	padding-left: 35px;
+	background: rgb(255, 255, 255);
+	overflow: hidden;
+	border-bottom: 1px solid rgb(237, 237, 237);
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+.menu-footer-pack-icon {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 3px;
+	right: 110px;
+}
+
+.menu-footer-pack span {
+	display: block;
+	width: 110px;
+	height: auto;
+	text-align: center;
+}
+
+.menu-footer-pack small {
+	color: rgb(115, 115, 115);
+}
+
+.menu-footer-pay {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: rgb(255, 255, 255);
+	z-index: 3;
+}
+
+.menu-footer-pay h3 {
+	width: auto;
+	padding-left: 10px;
+	color: rgb(255, 111, 51);
+}
+
+.menu-footer-pay h4 {
+	padding-left: 60px;
+	color: rgb(215, 215, 215);
+}
+
+.sw-btn-hoary,
+.sw-btn-orangeRed {
+	width: 80px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+.menu-footer-pack,
+.menu-footer-pay {
+	display: -webkit-box;
+	display: box;
+	-webkit-box-align: center;
+	box-align: center;
+}
+
+.menu-footer-pack {
+	width: 100%;
+	padding-left: 50%;
+	-webkit-box-pack: end;
+	box-pack: end;
+}
+
+.menu-footer-pay {
+	-webkit-box-pack: justify;
+	box-pack: justify;
+}
